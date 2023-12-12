@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 
 const FromDropdown = (props) => {
   let data = props.data;
@@ -6,11 +6,7 @@ const FromDropdown = (props) => {
   return (
     <select name="Work Experience" id="work" className="mb-2">
       {data.map((optionData, index) => {
-        return (
-          <>
-            <option>{optionData.name}</option>;
-          </>
-        );
+        return <option key={index}>{optionData.name}</option>;
       })}
     </select>
   );

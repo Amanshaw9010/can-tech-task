@@ -4,6 +4,7 @@ import Button from "./Button";
 import Label from "./Label";
 import FromDropdown from "./FromDropdown";
 import FromTitle from "./FromTitle";
+import { TypeWriterEffectText } from "./Typography";
 
 const OrganizationDetailForm = () => {
   let dropDown1 = [
@@ -23,10 +24,13 @@ const OrganizationDetailForm = () => {
   return (
     <>
       <div className="mb-8 flex flex-col gap-4">
-        <FromTitle
-          title="Professional Details"
-          subTitle="Help us evaluate your work profile to see if this program is right for you."
-        />
+        <div>
+          <TypeWriterEffectText text="Professional Details" />
+          <p className="text-xs  text-slate-200 ">
+            Help us evaluate your work profile to see if this program is right
+            for you.
+          </p>
+        </div>
 
         <FromTitle
           title="Latest Organization"

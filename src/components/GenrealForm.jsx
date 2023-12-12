@@ -5,6 +5,7 @@ import Label from "./Label";
 import FromDropdown from "./FromDropdown";
 import FromTitle from "./FromTitle";
 import Typewriter from "typewriter-effect";
+import { TypeWriterEffectText } from "./Typography";
 
 const GenrealForm = () => {
   let dropDown1 = [
@@ -16,19 +17,7 @@ const GenrealForm = () => {
   return (
     <>
       <div className="mb-8">
-        <h1 className="text-2xl mb-1.5 font-semibold text-white">
-          <Typewriter
-            options={{
-              delay: 30,
-              cursor: "",
-              autoStart: true,
-              loop: false,
-            }}
-            onInit={(typewriter) => {
-              typewriter.typeString("Basic Information").pauseFor(0).start();
-            }}
-          />
-        </h1>
+        <TypeWriterEffectText text="Basic Information" />
         <p className="text-xs  text-slate-200 ">
           We value your privacy. We'll never share your information with anyone
           else.
