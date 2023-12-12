@@ -1,13 +1,25 @@
 import React from "react";
 import StreetImage from "../assets/street.svg";
 import "../assets/CSS/FormLayout.css";
-
+import Typewriter from "typewriter-effect";
 
 const Application = () => {
   return (
     <div className="max-sm:min-h-[530px] form-second-container z-[2] p-6 flex flex-col overflow-hidden  bg-[#f0f0f0] relative  w-2/5">
       <div className="mb-8">
-        <h1 className="text-2xl font-semibold">Application Form</h1>
+        <h1 className="text-2xl font-semibold">
+          <Typewriter
+            options={{
+              delay: 30,
+              cursor: "",
+              autoStart: true,
+              loop: false,
+            }}
+            onInit={(typewriter) => {
+              typewriter.typeString("Application Form").pauseFor(0).start();
+            }}
+          />
+        </h1>
       </div>
       <div className="flex flex-col gap-1 mb-6">
         <h2 className="text-lg font-semibold">Application Closes</h2>
@@ -20,7 +32,7 @@ const Application = () => {
       <div className="flex flex-col gap-1 mb-6">
         <h1 className="text-lg font-semibold">Eligibility Criteria</h1>
         <p className="text-slate-500 text-sm">
-        Bachelor's degree with a minimum of 50% aggregate marks or equivalent.
+          Bachelor's degree with a minimum of 50% aggregate marks or equivalent.
         </p>
       </div>
 
@@ -37,8 +49,6 @@ const Application = () => {
         <img src={StreetImage} alt="" className="opacity-70" />
       </div>
     </div>
-
-
   );
 };
 

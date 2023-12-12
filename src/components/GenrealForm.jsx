@@ -4,6 +4,7 @@ import Button from "./Button";
 import Label from "./Label";
 import FromDropdown from "./FromDropdown";
 import FromTitle from "./FromTitle";
+import Typewriter from "typewriter-effect";
 
 const GenrealForm = () => {
   let dropDown1 = [
@@ -15,11 +16,23 @@ const GenrealForm = () => {
   return (
     <>
       <div className="mb-8">
-        <FromTitle
-          title="Basic Information"
-          subTitle=" We value your privacy. We'll never share your information with anyone
-        else."
-        />
+        <h1 className="text-2xl mb-1.5 font-semibold text-white">
+          <Typewriter
+            options={{
+              delay: 30,
+              cursor: "",
+              autoStart: true,
+              loop: false,
+            }}
+            onInit={(typewriter) => {
+              typewriter.typeString("Basic Information").pauseFor(0).start();
+            }}
+          />
+        </h1>
+        <p className="text-xs  text-slate-200 ">
+          We value your privacy. We'll never share your information with anyone
+          else.
+        </p>
       </div>
 
       <div className="h-3/4  w-full">
@@ -51,7 +64,7 @@ const GenrealForm = () => {
           </div>
 
           <div className="mt-4">
-            <Button text="Next" icon="next"/>
+            <Button text="Next" icon="next" />
           </div>
         </form>
       </div>
