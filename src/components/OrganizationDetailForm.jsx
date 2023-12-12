@@ -17,7 +17,7 @@ const OrganizationDetailForm = () => {
   let dropDown2 = [
     { name: "Legal" },
     { name: "Consulting" },
-    { name: "Finance" }
+    { name: "Finance" },
   ];
 
   return (
@@ -54,7 +54,7 @@ const OrganizationDetailForm = () => {
           </div>
 
           <div className="mt-4">
-            <Button />
+            <Button text="Next" icon="next" />
           </div>
         </form>
       </div>

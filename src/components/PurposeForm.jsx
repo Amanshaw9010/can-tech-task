@@ -56,30 +56,29 @@ const PurposeForm = () => {
               <Label id="other" name="Other" />
             </div>
           </div>
-<div>
-          <div className="mb-8 flex flex-col gap-4">
-            <FromTitle
-              title="Statement of Purpose"
-              subTitle="Help the admissions committee evaluate your candidature. Please answer the following question."
-            />
-          </div>
+          <div>
+            <div className="mb-8 flex flex-col gap-4">
+              <FromTitle
+                title="Statement of Purpose"
+                subTitle="Help the admissions committee evaluate your candidature. Please answer the following question."
+              />
+            </div>
 
-          <div className="flex w-full flex-col gap-1.5">
-            {" "}
-            <Label
-              id="textarea"
-              name="Why do you want to learn Data Science?"
-            />
-            <textarea
-              id="textarea"
-              className=" resize-y border-slate-300 text-white p-1.5 text-sm min-h-[100px] outline-none bg-transparent h-full border "
-            ></textarea>
+            <div className="flex w-full flex-col gap-1.5">
+              {" "}
+              <Label
+                id="textarea"
+                name="Why do you want to learn Data Science?"
+              />
+              <textarea
+                id="textarea"
+                className=" resize-y border-slate-300 text-white p-1.5 text-sm min-h-[100px] outline-none bg-transparent h-full border "
+              ></textarea>
+            </div>
           </div>
-
-</div>
 
           <div className="mt-4">
-            <Button />
+            <Button text="Submit Application" icon="send" />
           </div>
         </form>
       </div>

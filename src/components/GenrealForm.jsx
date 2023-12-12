@@ -51,7 +51,7 @@ const GenrealForm = () => {
           </div>
 
           <div className="mt-4">
-            <Button />
+            <Button text="Next" icon="next"/>
           </div>
         </form>
       </div>
